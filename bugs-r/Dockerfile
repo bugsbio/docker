@@ -7,6 +7,7 @@ RUN apt-get -y update && apt-get -y install r-recommended maven
 
 COPY rserve.jar rengine.jar /opt/bugsbio/
 COPY r-install.sh           /opt/bugsbio/bin/r-install.sh
+COPY lib                    /opt/bugsbio/lib
 COPY Rfile                  /opt/bugsbio/Rfile
 
 RUN cd /opt/bugsbio && mvn deploy:deploy-file -Dfile=rserve.jar -DartifactId=rserve -Dversion=1.8-0 -DgroupId=rserve -Dpackaging=jar -Durl=file:/opt/bugsbio/local-maven-repo
