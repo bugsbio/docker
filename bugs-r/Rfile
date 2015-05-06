@@ -13,3 +13,6 @@ gtools      3.4.1
 rmutil      X.X.X
 RUnit       0.4.27
 Rserve      1.7-3
+RJSONIO     1.3-0
+bitops      1.0-6
+RCurl       1.95-4.5
